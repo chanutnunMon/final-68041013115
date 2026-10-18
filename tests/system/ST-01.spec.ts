@@ -24,16 +24,15 @@ test('ST-01: complete purchase of two products', {
     await page.locator('.shopping_cart_link').click();
     await expect(page.locator('[data-test="item-4-title-link"]')).toHaveText('Sauce Labs Backpack');
     await expect(page.locator('[data-test="item-0-title-link"]')).toHaveText('Sauce Labs Bike Light');
-    
-    // คลิกปุ่มแล้วรอเปลี่ยนหน้าตรงๆ
+
     await page.locator('[data-test="checkout"]').click();
     await page.waitForURL('**/checkout-step-one.html');
   });
 
   await test.step('กรอก Checkout Information', async () => {
-    await page.locator('[data-test="first-name"]').fill('John');
-    await page.locator('[data-test="last-name"]').fill('Doe');
-    await page.locator('[data-test="postal-code"]').fill('12340');
+    await page.locator('[data-test="firstName"]').fill('John');
+    await page.locator('[data-test="lastName"]').fill('Doe');
+    await page.locator('[data-test="postalCode"]').fill('12340');
     await page.locator('[data-test="continue"]').click();
   });
 

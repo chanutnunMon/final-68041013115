@@ -143,7 +143,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 631,
+                  "duration": 4869,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -151,18 +151,18 @@
                   "steps": [
                     {
                       "title": "Login ผ่านหน้าเว็บไซต์จริง",
-                      "duration": 391
+                      "duration": 3768
                     },
                     {
                       "title": "สร้าง Inventory Stub",
-                      "duration": 82
+                      "duration": 561
                     },
                     {
                       "title": "ตรวจสอบผลจาก Stub",
-                      "duration": 15
+                      "duration": 16
                     }
                   ],
-                  "startTime": "2026-10-16T07:07:16.594Z",
+                  "startTime": "2026-10-18T11:32:15.730Z",
                   "annotations": [
                     {
                       "type": "description",
@@ -219,7 +219,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 576,
+                  "duration": 880,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -227,22 +227,22 @@
                   "steps": [
                     {
                       "title": "สร้าง Driver และเปิด Inventory",
-                      "duration": 343
+                      "duration": 569
                     },
                     {
                       "title": "ตรวจสอบ Inventory จริง",
-                      "duration": 23
+                      "duration": 22
                     },
                     {
                       "title": "เพิ่มสินค้า 2 รายการ",
-                      "duration": 86
+                      "duration": 94
                     },
                     {
                       "title": "ตรวจสอบสินค้าใน Cart",
-                      "duration": 122
+                      "duration": 191
                     }
                   ],
-                  "startTime": "2026-10-16T07:07:17.351Z",
+                  "startTime": "2026-10-18T11:32:20.835Z",
                   "annotations": [
                     {
                       "type": "description",
@@ -275,7 +275,7 @@
       "specs": [
         {
           "title": "ST-01: complete purchase of two products",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -298,57 +298,39 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30994,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts",
-                        "column": 52,
-                        "line": 34
-                      },
-                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'กรอก Checkout Information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"first-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'John'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"last-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Doe'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"postal-code\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'12340'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts:34:52\u001b[22m\n\u001b[2m    at C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts:33:3\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 996,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Login และตรวจสอบ Inventory",
-                      "duration": 336
+                      "duration": 496
                     },
                     {
                       "title": "เพิ่มสินค้าสองรายการ",
-                      "duration": 97
+                      "duration": 90
                     },
                     {
                       "title": "ตรวจสอบ Cart และไปหน้า Checkout",
-                      "duration": 95
+                      "duration": 98
                     },
                     {
                       "title": "กรอก Checkout Information",
-                      "duration": 30398,
-                      "error": {
-                        "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n",
-                        "stack": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n\n    at C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts:34:52\n    at C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts:33:3",
-                        "location": {
-                          "file": "C:\\final-exam-playwright\\tests\\system\\ST-01.spec.ts",
-                          "column": 52,
-                          "line": 34
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'กรอก Checkout Information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"first-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'John'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"last-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Doe'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"postal-code\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'12340'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                      }
+                      "duration": 97
+                    },
+                    {
+                      "title": "ตรวจสอบ Overview และสั่งซื้อ",
+                      "duration": 69
+                    },
+                    {
+                      "title": "ตรวจสอบ Order Complete",
+                      "duration": 16
                     }
                   ],
-                  "startTime": "2026-10-16T07:07:17.938Z",
+                  "startTime": "2026-10-18T11:32:21.732Z",
                   "annotations": [
                     {
                       "type": "description",
@@ -360,31 +342,10 @@
                       }
                     }
                   ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-01-ST-01-complete-purchase-of-two-products-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-01-ST-01-complete-purchase-of-two-products-chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-01-ST-01-complete-purchase-of-two-products-chromium\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-01-ST-01-complete-purchase-of-two-products-chromium\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "b437a3ea838a6734331f-68d25959565fafbf0274",
@@ -402,7 +363,7 @@
       "specs": [
         {
           "title": "ST-02: checkout validation and recovery",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -423,55 +384,37 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30606,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts",
-                        "column": 52,
-                        "line": 28
-                      },
-                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'ตรวจสอบ Last Name is required'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"first-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'John'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"error\"]'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Last Name is required'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts:28:52\u001b[22m\n\u001b[2m    at C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts:27:3\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 1221,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Login เพิ่มสินค้า และเปิด Checkout",
-                      "duration": 547
+                      "duration": 683
                     },
                     {
                       "title": "ตรวจสอบ First Name is required",
-                      "duration": 64
+                      "duration": 119
                     },
                     {
                       "title": "ตรวจสอบ Last Name is required",
-                      "duration": 29914,
-                      "error": {
-                        "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n",
-                        "stack": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"first-name\"]')\u001b[22m\n\n    at C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts:28:52\n    at C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts:27:3",
-                        "location": {
-                          "file": "C:\\final-exam-playwright\\tests\\system\\ST-02.spec.ts",
-                          "column": 52,
-                          "line": 28
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'ตรวจสอบ Last Name is required'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"first-name\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'John'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"continue\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"error\"]'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Last Name is required'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      }
+                      "duration": 54
+                    },
+                    {
+                      "title": "ตรวจสอบ Postal Code is required",
+                      "duration": 50
+                    },
+                    {
+                      "title": "แก้ไขข้อมูลและสั่งซื้อสำเร็จ",
+                      "duration": 142
                     }
                   ],
-                  "startTime": "2026-10-16T07:07:49.426Z",
+                  "startTime": "2026-10-18T11:32:22.743Z",
                   "annotations": [
                     {
                       "type": "description",
@@ -483,31 +426,10 @@
                       }
                     }
                   ],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-02-ST-02-checkout-validation-and-recovery-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-02-ST-02-checkout-validation-and-recovery-chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-02-ST-02-checkout-validation-and-recovery-chromium\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\final-exam-playwright\\test-results\\system-ST-02-ST-02-checkout-validation-and-recovery-chromium\\trace.zip"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "56c0a83e2e23481adf32-fcdcf2d10841c1c1d778",
@@ -518,15 +440,15 @@
       ]
     },
     {
-      "title": "ีunit\\UT-01.spec.ts",
-      "file": "ีunit/UT-01.spec.ts",
+      "title": "unit\\UT-01.spec.ts",
+      "file": "unit/UT-01.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "UT-01: Login Form Validation",
-          "file": "ีunit/UT-01.spec.ts",
+          "file": "unit/UT-01.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
@@ -542,7 +464,7 @@
                       "type": "description",
                       "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
                       "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                        "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                         "line": 4,
                         "column": 7
                       }
@@ -553,10 +475,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 609,
+                      "duration": 834,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -564,24 +486,24 @@
                       "steps": [
                         {
                           "title": "เปิดหน้า Login",
-                          "duration": 265
+                          "duration": 401
                         },
                         {
                           "title": "ส่งฟอร์มโดยไม่กรอกข้อมูล",
-                          "duration": 62
+                          "duration": 61
                         },
                         {
                           "title": "ตรวจสอบ Error และ URL",
-                          "duration": 22
+                          "duration": 15
                         }
                       ],
-                      "startTime": "2026-10-16T07:08:20.634Z",
+                      "startTime": "2026-10-18T11:32:23.976Z",
                       "annotations": [
                         {
                           "type": "description",
                           "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
                           "location": {
-                            "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                            "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                             "line": 4,
                             "column": 7
                           }
@@ -593,8 +515,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "80df2f3f6fbd94e3d319-df24e9063809dcdb4a97",
-              "file": "ีunit/UT-01.spec.ts",
+              "id": "8c739bc89a6720d0c629-54f4b4234188f85dc805",
+              "file": "unit/UT-01.spec.ts",
               "line": 4,
               "column": 7
             },
@@ -610,7 +532,7 @@
                       "type": "description",
                       "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
                       "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                        "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                         "line": 19,
                         "column": 7
                       }
@@ -621,10 +543,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 574,
+                      "duration": 990,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -632,24 +554,24 @@
                       "steps": [
                         {
                           "title": "เปิดหน้า Login และกรอก Username",
-                          "duration": 285
+                          "duration": 460
                         },
                         {
                           "title": "กด Login โดยไม่กรอก Password",
-                          "duration": 54
+                          "duration": 40
                         },
                         {
                           "title": "ตรวจสอบ Error และ URL",
-                          "duration": 15
+                          "duration": 14
                         }
                       ],
-                      "startTime": "2026-10-16T07:08:21.364Z",
+                      "startTime": "2026-10-18T11:32:24.817Z",
                       "annotations": [
                         {
                           "type": "description",
                           "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
                           "location": {
-                            "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                            "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                             "line": 19,
                             "column": 7
                           }
@@ -661,8 +583,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "80df2f3f6fbd94e3d319-e7c0cba5d32073d06ad1",
-              "file": "ีunit/UT-01.spec.ts",
+              "id": "8c739bc89a6720d0c629-416b2ace0476596fcfd7",
+              "file": "unit/UT-01.spec.ts",
               "line": 19,
               "column": 7
             },
@@ -678,7 +600,7 @@
                       "type": "description",
                       "description": "ตรวจสอบการ Login เมื่อ Username และ Password ไม่ถูกต้อง",
                       "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                        "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                         "line": 35,
                         "column": 7
                       }
@@ -689,10 +611,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 596,
+                      "duration": 922,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -700,24 +622,24 @@
                       "steps": [
                         {
                           "title": "เปิดหน้า Login และกรอกข้อมูลผิด",
-                          "duration": 307
+                          "duration": 368
                         },
                         {
                           "title": "กด Login",
-                          "duration": 59
+                          "duration": 50
                         },
                         {
                           "title": "ตรวจสอบ Error และ URL",
-                          "duration": 13
+                          "duration": 14
                         }
                       ],
-                      "startTime": "2026-10-16T07:08:21.946Z",
+                      "startTime": "2026-10-18T11:32:25.815Z",
                       "annotations": [
                         {
                           "type": "description",
                           "description": "ตรวจสอบการ Login เมื่อ Username และ Password ไม่ถูกต้อง",
                           "location": {
-                            "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-01.spec.ts",
+                            "file": "C:\\final-exam-playwright\\tests\\unit\\UT-01.spec.ts",
                             "line": 35,
                             "column": 7
                           }
@@ -729,8 +651,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "80df2f3f6fbd94e3d319-ca88d85bb1e198df6517",
-              "file": "ีunit/UT-01.spec.ts",
+              "id": "8c739bc89a6720d0c629-40c069adb5013c050578",
+              "file": "unit/UT-01.spec.ts",
               "line": 35,
               "column": 7
             }
@@ -739,15 +661,15 @@
       ]
     },
     {
-      "title": "ีunit\\UT-02.spec.ts",
-      "file": "ีunit/UT-02.spec.ts",
+      "title": "unit\\UT-02.spec.ts",
+      "file": "unit/UT-02.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "UT-02: Product Button State Validation",
-          "file": "ีunit/UT-02.spec.ts",
+          "file": "unit/UT-02.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
@@ -763,7 +685,7 @@
                       "type": "description",
                       "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove",
                       "location": {
-                        "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-02.spec.ts",
+                        "file": "C:\\final-exam-playwright\\tests\\unit\\UT-02.spec.ts",
                         "line": 4,
                         "column": 7
                       }
@@ -774,10 +696,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 657,
+                      "duration": 829,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -785,28 +707,28 @@
                       "steps": [
                         {
                           "title": "Login เข้าสู่ระบบ",
-                          "duration": 332
+                          "duration": 496
                         },
                         {
                           "title": "ตรวจสอบปุ่มก่อนเพิ่มสินค้า",
-                          "duration": 77
+                          "duration": 56
                         },
                         {
                           "title": "เพิ่มสินค้าเข้า Cart",
-                          "duration": 34
+                          "duration": 60
                         },
                         {
                           "title": "ลบสินค้าออกจาก Cart",
-                          "duration": 64
+                          "duration": 56
                         }
                       ],
-                      "startTime": "2026-10-16T07:08:22.556Z",
+                      "startTime": "2026-10-18T11:32:26.756Z",
                       "annotations": [
                         {
                           "type": "description",
                           "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove",
                           "location": {
-                            "file": "C:\\final-exam-playwright\\tests\\ีunit\\UT-02.spec.ts",
+                            "file": "C:\\final-exam-playwright\\tests\\unit\\UT-02.spec.ts",
                             "line": 4,
                             "column": 7
                           }
@@ -818,8 +740,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "453c080270814195e170-201629f2ed076a607df7",
-              "file": "ีunit/UT-02.spec.ts",
+              "id": "6c91503e0156bd8f2507-f30172e11afe49979971",
+              "file": "unit/UT-02.spec.ts",
               "line": 4,
               "column": 7
             }
@@ -830,11 +752,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-16T07:07:16.157Z",
-    "duration": 67130.14099999999,
-    "expected": 6,
+    "startTime": "2026-10-18T11:32:15.277Z",
+    "duration": 12433.646,
+    "expected": 8,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }
