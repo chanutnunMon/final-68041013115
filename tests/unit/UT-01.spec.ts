@@ -11,8 +11,11 @@ test.describe('UT-01: Login Form Validation', () => {
       await page.locator('[data-test="login-button"]').click();
     });
     await test.step('ตรวจสอบ Error และ URL', async () => {
+      await expect(page.locator('[data-test="error"]')).toBeVisible();
       await expect(page.locator('[data-test="error"]')).toContainText('Username is required');
+      await expect(page).toHaveURL('https://www.saucedemo.com/');
       await expect(page).not.toHaveURL(/.*inventory.html/);
+      await expect(page.locator('[data-test="login-button"]')).toBeVisible();
     });
   });
 
@@ -27,8 +30,11 @@ test.describe('UT-01: Login Form Validation', () => {
       await page.locator('[data-test="login-button"]').click();
     });
     await test.step('ตรวจสอบ Error และ URL', async () => {
+      await expect(page.locator('[data-test="error"]')).toBeVisible();
       await expect(page.locator('[data-test="error"]')).toContainText('Password is required');
+      await expect(page).toHaveURL('https://www.saucedemo.com/');
       await expect(page).not.toHaveURL(/.*inventory.html/);
+      await expect(page.locator('[data-test="login-button"]')).toBeVisible();
     });
   });
 
@@ -44,8 +50,11 @@ test.describe('UT-01: Login Form Validation', () => {
       await page.locator('[data-test="login-button"]').click();
     });
     await test.step('ตรวจสอบ Error และ URL', async () => {
+      await expect(page.locator('[data-test="error"]')).toBeVisible();
       await expect(page.locator('[data-test="error"]')).toContainText('Username and password do not match');
+      await expect(page).toHaveURL('https://www.saucedemo.com/');
       await expect(page).not.toHaveURL(/.*inventory.html/);
+      await expect(page.locator('[data-test="login-button"]')).toBeVisible();
     });
   });
 });

@@ -11,7 +11,11 @@ test('IT-01: top down REAL Login -> browser-level Inventory STUB', {
     await page.locator('[data-test="username"]').fill('standard_user');
     await page.locator('[data-test="password"]').fill('secret_sauce');
     await page.locator('[data-test="login-button"]').click();
+
+    // ยืนยันว่า Inventory จริงโหลดขึ้นมาก่อนจะแทนด้วย Stub
     await expect(page).toHaveURL(/.*inventory.html/);
+    await expect(page.locator('[data-test="title"]')).toHaveText('Products');
+    await expect(page.locator('.inventory_item').first()).toBeVisible();
   });
 
   await test.step('สร้าง Inventory Stub', async () => {
@@ -26,8 +30,9 @@ test('IT-01: top down REAL Login -> browser-level Inventory STUB', {
   });
 
   await test.step('ตรวจสอบผลจาก Stub', async () => {
-    // ตรวจสอบข้อความ และชื่อสินค้าจำลอง
+    // ตรวจสอบข้อความ จำนวน และชื่อสินค้าจำลอง
     await expect(page.locator('h1')).toHaveText('Mock Inventory Ready');
+    await expect(page.locator('.inventory_item')).toHaveCount(2);
     await expect(page.locator('.inventory_item').first()).toHaveText('Mock Backpack');
     await expect(page.locator('.inventory_item').nth(1)).toHaveText('Mock Bike Light');
   });
